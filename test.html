@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" href="Style.css">
+	
+</head>
+<body>
+<p> Cette calculatrice est simple et composée de 4 opérations à deux nombres.</p>
+	<h1>To open the calculator click here:</h1>
+	<input id="button" type="button" value="Open" onclick="calc()" />
+	
+	
+	<script>
+	function calc(){
+	confirm("Bonjour sur la calculatrice de Diakite Veillez remplir les données suivantes");
+	
+	var type=prompt("Mettez le signe de l'opération que vous souhaitez ", "+ ; - ; ÷ ; × ");
+	
+var x= prompt("Entrez le 1er nombre");
+var y= prompt("mettez le 2ème nombre");
+var sum= Number(x)+Number(y) ;
+var diff= Number(x)-Number(y) ;
+var div= Number(x)/Number(y) ;
+var mul= Number(x)*Number(y) ;
+
+
+switch (type){
+case "+":
+alert("Sum is "+sum);
+break;
+case "-":
+alert("Différence is "+diff);
+break;
+case "÷":
+alert("Division is "+div);
+break;
+case "×":
+ alert("Multiplication is "+mul);
+ break;
+default:
+alert("impossible");
+}
+
+}
+
+
+	</script>
+	
+	
+</body>
+</html>
